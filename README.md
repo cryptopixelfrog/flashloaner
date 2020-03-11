@@ -1,4 +1,4 @@
-# flashloaner
+# Flashloaner
 Flashloan Smart Contract based on Aave.
 
 
@@ -95,3 +95,13 @@ Transaction done.
 undefined
 Done
 ```
+## Token Transfer Flow
+https://kovan.etherscan.io/tx/0xde375a00cef4016fda6151f24b906f0d9589a6a114fa4d2003383b881454f7e8
+
+<img src="https://github.com/cryptopixelfrog/flashloaner/blob/master/doc/img/tokenflow.png">
+
+1. Borrow 0.0001 DAI and transfer from 0x95d1189ed88b380e319df73ff00e479fcc4cfa45(<a href="https://developers.aave.com/#smart-contracts" target="_blank">LendingPoolCore</a>)
+2. to 0xb7d66c0f997a1c61b46c94aeccb7496450807d2d(my <a href="https://kovan.etherscan.io/address/0xb7d66c0f997a1c61b46c94aeccb7496450807d2d#internaltx" target="_blank">Smart Contract</a>)
+3. then repay 0.00010035 DAI to 0x95d1189ed88b380e319df73ff00e479fcc4cfa45(LendingPoolCore with fee)
+4. then transfer to 0x971EFe90088F21dC6a36f610FFEd77Fc19710708(<a href="https://kovan.etherscan.io/address/0x971efe90088f21dc6a36f610ffed77fc19710708#tokentxns" target="_blank">DAI Smart Contract</a>) 
+
