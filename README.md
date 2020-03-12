@@ -1,7 +1,38 @@
 # Flashloaner
-Flashloan Smart Contract based on Aave.
+Flashloan Smart Contract based on Aave. This is based on ez-flashloan.
 
+## Tools & Systems 
+ - [npm](https://www.npmjs.com) based app
+ - [Truffle](https://www.trufflesuite.com) for Smart Contract management
+ - [Ganache-cli](https://github.com/trufflesuite/ganache-cli) for simulate Ethereum Network
+ - [Kovan Testnet](https://kovan.etherscan.io)
+ - [Metamask](https://metamask.io) for development wallet
+ - [Infura](https://infura.io) account and API key
+ - [AAve Protocal](https://github.com/aave/aave-protocol), [AAve doc](https://developers.aave.com/#smart-contracts)
+ - [AAve test net](https://testnet.aave.com) for getting Aave DAI
 
+## Pre-requirements
+- kETH on Metamask(https://github.com/kovan-testnet/faucet)
+- AAve DAI on Metamask(https://testnet.aave.com)
+
+## Post-requirements
+- You will need to deploy your Samrt Contract to Kovan. You need the SC address for test.
+- You need to have & send enough AAve DAI to your Smart Contract(about 100).
+- You need to have kETH on your Kovan connected Metamask. You need the wallet address for test.
+
+## Setting npm app
+    ```
+    git clone https://github.com/cryptopixelfrog/flashloaner.git .
+    cd flashloaner
+    npm install
+    ```
+
+## Run Test
+This is not unit test code, it is just stand alone JS script that give output.
+    ```
+    cd flashloaner;cd test-cli
+    node test-cli/flashloan.js 
+    ```
 
 ## Receipt Output of flashloan
 ```javascript
@@ -95,6 +126,7 @@ Transaction done.
 undefined
 Done
 ```
+
 ## Token Transfer Flow
 https://kovan.etherscan.io/tx/0xde375a00cef4016fda6151f24b906f0d9589a6a114fa4d2003383b881454f7e8
 
