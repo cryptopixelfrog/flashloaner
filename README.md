@@ -21,18 +21,18 @@ Flashloan Smart Contract based on Aave. This is based on ez-flashloan.
 - You need to have kETH on your Kovan connected Metamask. You need the wallet address for test.
 
 ## Setting npm app
-    ```
+```
     git clone https://github.com/cryptopixelfrog/flashloaner.git .
     cd flashloaner
     npm install
-    ```
+```
 
 ## Run Test
 This is not unit test code, it is just stand alone JS script that give output.
-    ```
+```
     cd flashloaner;cd test-cli
     node test-cli/flashloan.js 
-    ```
+```
 
 ## Receipt Output of flashloan
 ```javascript
